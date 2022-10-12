@@ -1,0 +1,38 @@
+@import '../sass/variables.sass'
+@import '../sass/flex.sass'
+
+.containerCards
+  @include flex
+  max-width:100%
+  flex-direction: column
+
+.titleInformative
+ @include flex
+ width:50%
+ flex-direction: column
+ margin: 4rem auto  
+ color:$VeryDark-Blue
+
+.titleInformative h1  
+  font-size: 2.1rem
+
+.pCards
+  color: $Gray
+  font-weight: 400
+  margin-top: 1rem
+  width:70%
+  text-align: center
+
+.cards
+  @include flex
+  flex-direction: row
+  margin:.5rem
+  max-width: 100%
+ 
+.cards article
+ @include allCards
+ 
+.cards img
+  background: $DarkViolet
+  padding: .9rem
+  clip-path: circle()

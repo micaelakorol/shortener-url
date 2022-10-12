@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import header from "../sass/header.module.sass";
-import list from "../images/list.svg";
-import logo from "../images/logo.svg";
-import mobile from "../sass/headerMobile.module.sass";
+import header from "../../sass/header.module.sass";
+import list from "../../images/list.svg";
+import logo from "../../images/logo.svg";
+import mobile from "../../sass/headerMobile.module.sass";
 const HeaderMobile = () => {
   const [lookHeaderMob, setLookHeaderMob] = useState(false);
   return (

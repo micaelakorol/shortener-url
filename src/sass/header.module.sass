@@ -1,11 +1,10 @@
 @import './variables.sass'
+@import './flex.sass'
 
 header
- display: flex
- flex-direction: row
  padding: 1rem
- align-items: center
- flex-wrap: wrap
+ @include flexRow
+ justify-content: center
 
 .logoHeader
  width:60%
@@ -73,6 +72,7 @@ a
   display: none
  header
     padding: 0.5rem
+    @include flex
   
 @media (min-width:683px)
  .container

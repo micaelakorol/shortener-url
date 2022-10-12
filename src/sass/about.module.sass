@@ -1,0 +1,62 @@
+@import '../sass/variables.sass'
+@import '../sass/flex.sass'
+
+.containerMain
+    width: 100vw
+    margin: 5% 0 0 5rem
+    display: flex
+    justify-content: space-between
+
+.infoMain
+    width: 40%
+    display: flex
+    flex-direction: column
+
+.infoMain b
+    color: $Gray
+    font-weight: 500
+    margin: 1rem 0
+    width: 70%
+
+.infoMain button
+    width: 130px
+    padding: 0.5rem
+    max-width: 100%
+
+.containerMain h1
+    font-size: 3.4rem
+
+.imgMain
+    width: 45%
+    margin: 0
+
+.imgMain img
+    width: 100%
+    max-width: 100%
+    position: relative
+
+@media (max-width:900px)
+
+ .containerMain h1
+  font-size: 2.5rem
+ .imgMain img
+  width:80%
+ .imgMain
+  width:60%
+ .infoMain b
+  width:100%
+
+@media (max-width:600px)
+ .containerMain
+  @include flex
+  flex-direction: column-reverse
+  margin:0 0.7rem
+
+ .infoMain
+  width:80%
+ .imgMain
+  width:100%
+ .imgMain img
+  width:100%
+  margin:1rem 0
+  
