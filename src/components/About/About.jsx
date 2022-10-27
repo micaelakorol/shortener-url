@@ -1,7 +1,7 @@
 import React from "react";
-import about from '../sass/about.module.sass'
-import imgAbout from '../images/illustration-working.svg'
-import header from '../sass/header.module.sass'
+import about from "../../sass/about.module.sass";
+import imgAbout from "../../images/illustration-working.svg";
+import header from "../../sass/header.module.sass";
 const About = () => {
   return (
     <main className={about.containerMain}>
@@ -14,7 +14,7 @@ const About = () => {
         <button className={header.btnSignUp}>Get Started</button>
       </section>
       <section className={about.imgMain}>
-<img src={imgAbout} alt="" />
+        <img src={imgAbout} alt="Logo sit person" />
       </section>
     </main>
   );

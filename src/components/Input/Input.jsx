@@ -1,5 +1,5 @@
 import input from "../../sass/input.module.sass";
-import '../../sass/variables.sass'
+import "../../sass/variables.sass";
 import Links from "../Links/Links";
 const Input = ({
   inputs,
@@ -9,7 +9,6 @@ const Input = ({
   shortenLink,
   inputValue,
 }) => {
-
   return (
     <>
       <div className={input.containerInput}>
@@ -27,7 +26,10 @@ const Input = ({
           </button>
         </form>
       </div>
-     <Links inputValue={inputValue} shortenLink={shortenLink}/>
+      <Links
+        inputValue={inputValue}
+        shortenLink={shortenLink}
+      />
     </>
   );
 };

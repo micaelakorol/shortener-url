@@ -8,7 +8,7 @@ const HeaderMobile = () => {
   return (
     <header className={header.container}>
       <section className={header.headerMobile}>
-        <img src={logo} alt="" className={header.imgMobile} />
+        <img src={logo} alt="Logo Shortly" className={header.imgMobile} />
         <img
           src={list}
           alt=""

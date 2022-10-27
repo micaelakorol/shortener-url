@@ -1,16 +1,8 @@
-//import React, { useEffect, useState } from "react";
 import cards from "../../sass/cards.module.sass";
-//import data from "./CardsDescription";
 import brand from "../../images/icon-brand-recognition.svg";
 import detailed from "../../images/icon-detailed-records.svg";
 import fully from "../../images/icon-fully-customizable.svg";
 const Cards = () => {
-  /*const [card, setCard] = useState([])
-    useEffect(() => {
-       const cardInfo = data
-    setCard(cardInfo.items)   
-    },[])*/
-
   return (
     <div className={cards.containerCards}>
       <section className={cards.titleInformative}>
@@ -21,16 +13,8 @@ const Cards = () => {
         </p>
       </section>
       <section className={cards.cards}>
-        {/* {card.map((item) => (
-        <div key={item.id} className={cards.cardBody}>
-           <p>{item.title}</p> 
-          <p>{item.description}</p>
-          <img src={item.image} alt="" />
-        </div>
-     ))}
-   */}
         <article className="cardOne">
-          <img src={brand} alt="" />
+          <img src={brand} alt="Logo" />
           <h4>Brand Recognition</h4>
           <p>
             Boost your brand recognition with each click. Generic links dont
@@ -39,7 +23,7 @@ const Cards = () => {
         </article>
 
         <article className="cardTwo">
-          <img src={detailed} alt="" />
+          <img src={detailed} alt="Logo" />
           <h4>Detailed Records</h4>
           <p>
             Gain insights into who is clicking your links. Knowing when and
@@ -48,7 +32,7 @@ const Cards = () => {
         </article>
 
         <article className="cardThree">
-          <img src={fully} alt="" />
+          <img src={fully} alt="Logo" />
           <h4>Fully Customizable</h4>
           <p>
             Improve brand awareness and content discoverabillity through
