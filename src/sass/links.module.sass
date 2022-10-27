@@ -3,7 +3,7 @@
 
 .urls
   //@include flex
-  width:60%
+  width:70%
   margin: auto
 
 .containerLinks
@@ -12,6 +12,8 @@
   border-radius: .5rem
   margin:.5rem
   background:#e6e6e6
+  height: auto
+  flex-wrap: wrap
 
 .shorten
  color:$Cyan
@@ -23,3 +25,9 @@
   @include flex
   color:$Cyan
   font-size: 1.1rem
+
+@media(max-width: 480px)
+  .urls
+   width: 100%
+  .containerLinks
+    padding: 1rem

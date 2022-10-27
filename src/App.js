@@ -1,10 +1,10 @@
 import Cards from "./components/Cards/Cards";
-import InputFunctions from "./components/Input/InputFunctions";
 import About from "./components/About/About";
 import Boost from "./components/Boost.jsx/Boost";
 import Header from "./components/Header/Header";
 import HeaderMobile from "./components/Header/HeaderMobile";
 import Footer from "./components/Footer/Footer";
+import InputFunctions from "./components/Input/InputFunctions";
 
 const App = () => {
   return (
