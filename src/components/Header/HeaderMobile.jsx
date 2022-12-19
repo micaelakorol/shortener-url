@@ -17,7 +17,7 @@ const HeaderMobile = () => {
         />
       </section>
       {lookHeaderMob && (
-        <div className={mobile.contentMobile}>
+        <nav className={mobile.contentMobile}>
           <a href="/">Features</a>
           <a href="/">Pricing</a>
           <a href="/">Resources</a>
@@ -26,7 +26,7 @@ const HeaderMobile = () => {
             Login
           </a>
           <button className={header.btnSignUp}>Sign Up</button>
-        </div>
+        </nav>
       )}
     </header>
   );
