@@ -6,4 +6,4 @@ Desafio Frontend Mentor. 🏆
 📍 Desarrollada con: Javascript, React, CSS/SASS
 Deploy: https://shortener-url-fm.netlify.app/
 
-*Refactoring en proceso
+*Refactorizacion en proceso
