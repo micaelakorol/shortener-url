@@ -6,10 +6,8 @@ export const geolocalization = () => {
       navigator.geolocation.getCurrentPosition(function (position) {
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
-        // We check if the location has changed
         if (lat !== previousLat || lon !== previousLon) {
           console.log(lat, lon);
-          // We update the previous location variables
           previousLat = lat;
           previousLon = lon;
         }

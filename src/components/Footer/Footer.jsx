@@ -6,7 +6,7 @@ import Ancla from "../../reusable/Ancla";
 import Image from "../../reusable/Image";
 import { logoFooter } from "../../assets/variables";
 const Footer = () => {
-  let info = data.items;
+  const info = data.items;
   return (
     <footer>
      <Image src={logoFooter} alt='logo'/>

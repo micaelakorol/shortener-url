@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import axios from "axios";
-import { MyContext } from "../../context/AppContext";
+import { MyContext } from "../../context/AppState";
 
 const Request = () => {
   const { captureInput, setShortenLink, setMessages } = useContext(MyContext);

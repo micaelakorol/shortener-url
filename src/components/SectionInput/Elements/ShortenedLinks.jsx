@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 import "../../../styles/sass/variables.sass";
 import links from "../../../styles/sass/links.module.sass";
-import { MyContext } from "../../../context/AppContext";
+import { MyContext } from "../../../context/AppState";
 // this component, show shortened links:
 const ShortenedLinks = () => {
   const { inputValue, shortenLink } = useContext(MyContext);

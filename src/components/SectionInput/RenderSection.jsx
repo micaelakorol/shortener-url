@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Input from "../SectionInput/Elements/Input";
 import links from "../../styles/sass/links.module.sass";
-import { MyContext } from "../../context/AppContext";
+import { MyContext } from "../../context/AppState";
 
 const RenderSectionInput = () => {
   const { messages } = useContext(MyContext);

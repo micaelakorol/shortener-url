@@ -2,7 +2,7 @@ import input from "../../../styles/sass/input.module.sass";
 import "../../../styles/sass/variables.sass";
 import HandleActions from "../../../services/functions/HandleActions";
 import { useContext } from "react";
-import { MyContext } from "../../../context/AppContext";
+import { MyContext } from "../../../context/AppState";
 import Button from "../../../reusable/Button";
 import ShortenedLinks from "./ShortenedLinks";
 const Input = () => {

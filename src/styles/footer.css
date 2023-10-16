@@ -1,5 +1,5 @@
 footer {
-  color:var(--white);
+  color: var(--white);
   min-height: 200px;
   max-height: 100%;
   width: 100%;
@@ -30,7 +30,7 @@ footer b {
   text-align: center;
 }
 
-footer svg {
+footer img {
   margin: 0 0 0.6rem 1rem;
   cursor: pointer;
 }
