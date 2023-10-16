@@ -1,0 +1,79 @@
+@import './variables.sass'
+@import './flex.sass'
+
+
+header
+ padding: 1rem
+ @include flexRow
+ justify-content: center
+
+.logoHeader
+ width:60%
+ max-width: 100%
+ display: flex
+ align-items: center
+
+a
+ margin: 0 1rem
+ text-decoration: none
+ color:$GrayishViolet
+ font-weight: 600
+ &:hover
+    color: $dark
+
+.imgHeader
+  margin:0 3rem 
+  max-width: 100%
+
+.loginHeader
+ width:30%
+ @include flex
+ justify-content: space-evenly
+
+.btnHeader
+  color: $GrayishViolet
+  background: none
+  border: none
+  font-weight: 600
+  font-size: 0.9rem
+  cursor: pointer
+  padding: 0.4rem
+  width:100px
+  border-radius: 1rem
+  &:hover
+    color:#000
+
+.btnSignUp
+ @extend .btnHeader
+ background: $Cyan
+ color:$white
+ &:hover
+  opacity: 0.5
+  color:$white
+/* mobile header*/
+.headerMobile
+ width:100% 
+ @include flex
+ justify-content: space-around
+ padding: 0
+
+.imgMobile
+ margin:0 0.5rem
+ max-width: 100%
+
+@media (max-width:899px)
+ .imgHeader
+  margin:0
+ a
+  margin:0.5rem
+
+@media (max-width:687px)
+ .containerHeader
+  display: none
+ header
+    padding: 0.5rem
+    @include flex
+  
+@media (min-width:688px)
+ .container
+  display: none

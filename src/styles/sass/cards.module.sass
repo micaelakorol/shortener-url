@@ -1,0 +1,51 @@
+@import './variables.sass'
+@import './flex.sass'
+
+.containerCards
+  @include flex
+  max-width:100%
+  flex-direction: row
+  margin-bottom: 2rem
+  flex-wrap: wrap
+
+.titleInformative
+ @include flex
+ width:50%
+ flex-direction: column
+ margin: 4rem auto  
+ text-align: center
+ color:$VeryDark-Blue
+
+.titleInformative h1  
+  font-size: 2.1rem
+
+.pCards
+  color: gray
+  font-weight: 400
+  margin-top: 1rem
+  width:70%
+  text-align: center
+
+.cards
+  @include flex
+  margin:.5rem
+  max-width: 100%
+ 
+.cards article
+ @include allCards
+ display:flex
+ flex-direction:row
+ 
+.cards img
+  background: $DarkViolet
+  padding: .9rem
+  clip-path: circle()
+
+@media (max-width:600px)
+ .cards
+  @include flex
+  flex-wrap: wrap
+ .pCards
+   width: 100%
+ .titleInformative
+  width: 100%

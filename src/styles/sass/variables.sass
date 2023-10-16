@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Bebas+Neue&family=Courier+Prime&family=Cutive&family=IM+Fell+DW+Pica+SC&family=JetBrains+Mono:wght@100;500&family=Josefin+Sans:wght@600&family=Kumbh+Sans:wght@200;700&family=Mohave&family=Mukta:wght@300&family=Nanum+Gothic&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400&family=PT+Serif&family=Poppins:wght@300;400;500;700&family=Quicksand:wght@300&family=Roboto+Mono:wght@200;500&family=Schoolbell&family=Silkscreen&display=swap')
+@import './flex.sass'
+
+$main-font: 'Poppins', sans-serif
+$Cyan: hsl(180, 66%, 49%)
+$DarkViolet: hsl(257, 27%, 26%)
+$Red: hsl(0, 87%, 67%)
+$Gray: hsl(0, 0%, 75%)
+$GrayishViolet: hsl(257, 7%, 63%)
+$VeryDark-Blue: hsl(255, 11%, 22%)
+$VeryDark-Violet: hsl(260, 8%, 14%)
+$white: #fff  
+$dark: #000
+$img: "../../assets/images/bg-shorten-desktop.svg"
+
+*
+    font-family: $main-font
+    overflow-x: hidden
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    /*background-image: url(#{$img})*/
+
+.copied
+  background: $DarkViolet
+  @include btnCopy
+
+.copy
+ background: $Cyan
+ @extend .copied

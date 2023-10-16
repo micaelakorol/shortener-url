@@ -1,0 +1,35 @@
+@import './variables.sass'
+@import './flex.sass'
+@import './header.module.sass'
+
+.containerInput
+   width:60%
+   margin:5% auto 1rem auto
+   @include flex
+   flex-direction: row
+   background-color: $DarkViolet
+   background-image: url(#{$img})
+   background-repeat: no-repeat
+   background-position: top
+   min-height: 120px
+   border-radius: .5rem
+
+.containerInput form
+ width:100%
+ text-align: center
+
+.containerInput input
+ @include input
+
+.btnInput
+ @extend .btnSignUp
+ height: 40px
+ border-radius: .5rem
+ max-width: 120px
+ margin:.5rem
+
+@media(max-width: 480px)
+ .containerInput
+   width: 100%
+ .containerInput input
+   width: 90%

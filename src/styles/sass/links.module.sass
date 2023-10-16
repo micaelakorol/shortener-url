@@ -1,0 +1,34 @@
+@import './variables.sass'
+@import './flex.sass'
+
+
+.urls
+  //@include flex
+  width:70%
+  margin: auto
+
+.containerLinks
+  @include flexRow
+  padding: 1.5rem
+  border-radius: .5rem
+  margin:.5rem
+  background:#e6e6e6
+  height: auto
+  flex-wrap: wrap
+
+.shorten
+ color:$Cyan
+
+.containerLinks p
+ font-weight: 500
+//Style: Spinners y Error
+.center
+  @include flex
+  color:$Cyan
+  font-size: 1.1rem
+
+@media(max-width: 480px)
+  .urls
+   width: 100%
+  .containerLinks
+    padding: 1rem
