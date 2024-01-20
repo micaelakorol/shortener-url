@@ -1,4 +1,3 @@
-// eslint-disable-next-line react-hooks/rules-of-hooks
 import { useContext } from "react";
 import axios from "axios";
 import { MyContext } from "../../context/AppState";

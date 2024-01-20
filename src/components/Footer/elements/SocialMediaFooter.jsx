@@ -2,7 +2,7 @@ import React from "react";
 import Image from "../../../reusable/Image";
 import { facebook, instagram, pinterest, twitter } from "../../../assets/variables";
 
-const Social = () => {
+const SocialMediaFooter = () => {
   return (
     <>
       <Image src={facebook} alt='facebook' />
@@ -13,4 +13,4 @@ const Social = () => {
   );
 };
 
-export default Social;
+export default SocialMediaFooter;

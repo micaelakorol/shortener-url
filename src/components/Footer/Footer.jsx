@@ -1,5 +1,5 @@
 import React from "react";
-import Social from "./elements/Social";
+import SocialMediaFooter from "./elements/SocialMediaFooter";
 import data from "./dataFooter/LinksFooter";
 import "../../styles/footer.css";
 import Ancla from "../../reusable/Ancla";
@@ -20,7 +20,7 @@ const Footer = () => {
         </section>
       ))}
       <section className="social">
-        <Social />
+        <SocialMediaFooter />
       </section>
     </footer>
   );
