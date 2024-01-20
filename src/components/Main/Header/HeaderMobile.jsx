@@ -9,7 +9,6 @@ import { logo, menu } from "../../../assets/variables";
 
 const HeaderMobile = () => {
   const [showMobile, setShowMobile] = useState(false);
-  console.log(showMobile)
   return (
     <header className={mobile.containerMobile}>
       <section className={mobile.headerMobile}>

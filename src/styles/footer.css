@@ -20,8 +20,9 @@ footer a:hover {
   color: var(--Cyan);
 }
 
-footer b {
+footer li {
   margin-bottom: 0.6rem;
+  font-weight: 600;
 }
 
 .links {

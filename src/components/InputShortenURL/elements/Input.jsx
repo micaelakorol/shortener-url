@@ -10,7 +10,7 @@ const Input = () => {
   const { handleChange, handleSubmit } = HandleActions();
   return (
     <>
-      <div className={input.containerInput}>
+      <section className={input.containerInput}>
         <form action="" onSubmit={handleSubmit}>
           <input
             type="url"
@@ -26,7 +26,7 @@ const Input = () => {
             Shorten It!
           </Button>
         </form>
-      </div>
+      </section>
       <ShortenedLinks />
     </>
   );

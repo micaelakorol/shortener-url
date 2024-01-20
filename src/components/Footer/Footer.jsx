@@ -1,6 +1,6 @@
 import React from "react";
 import SocialMediaFooter from "./elements/SocialMediaFooter";
-import data from "./dataFooter/LinksFooter";
+import data from "./dataFooter/linksFooter";
 import "../../styles/footer.css";
 import Ancla from "../../reusable/Ancla";
 import Image from "../../reusable/Image";
@@ -9,15 +9,15 @@ const Footer = () => {
   const info = data.items;
   return (
     <footer>
-     <Image src={logoFooter} alt='logo'/>
+      <Image src={logoFooter} alt="logo" />
       {info.map((item) => (
-        <section className="links" key={item.id}>
-          <b>{item.title}</b>
+        <ul className="links" key={item.id}>
+          <li>{item.title}</li>
           <Ancla href="/">{item.l1}</Ancla>
           <Ancla href="/">{item.l2}</Ancla>
           <Ancla href="/">{item.l3}</Ancla>
           {item.l4 ? <Ancla href="/">{item.l4}</Ancla> : null}
-        </section>
+        </ul>
       ))}
       <section className="social">
         <SocialMediaFooter />

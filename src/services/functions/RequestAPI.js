@@ -4,8 +4,7 @@ import { MyContext } from "../../context/AppState";
 
 const RequestAPI = () => {
   const { captureInput, setShortenLink, setMessages } = useContext(MyContext);
-
-  const request = async () => {
+  const request = async() => {
     try {
       setMessages("Loading....");
       const res = await axios.post("/api/v1/shorten", { url: captureInput });

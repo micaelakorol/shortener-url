@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext } from "react";
 import Input from "./elements/Input";
 import links from "../../styles/sass/links.module.sass";

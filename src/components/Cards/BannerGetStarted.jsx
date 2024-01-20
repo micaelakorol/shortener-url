@@ -5,10 +5,10 @@ import Button from "../../reusable/Button";
 
 const BannerGetStarted = () => {
   return (
-    <section className={styles.containerBoost}>
+    <article className={styles.containerBoost}>
       <h2> Boost your links today </h2>
       <Button className={header.btnSignUp}>Get Started</Button>
-    </section>
+    </article>
   );
 };
 

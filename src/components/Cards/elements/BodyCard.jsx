@@ -1,6 +1,6 @@
 import Image from "../../../reusable/Image";
 import cards from "../../../styles/sass/cards.module.sass";
-import data from "../InfoCard/CardsDescription";
+import data from "../dataCard/cardDescription";
 const BodyCard = () => {
   const infoCard = data.items;
   return (
@@ -8,15 +8,14 @@ const BodyCard = () => {
       <div className={cards.containerCards}>
         {infoCard.map((item) => (
           <section className={cards.cards} key={item.id}>
-            <article>
+            <section>
               <Image src={item.image} alt="Logo" />
               <h4>{item.title}</h4>
               <p>{item.description}</p>
-            </article>
+            </section>
           </section>
         ))}
       </div>
-      {/** Boost your links today */}
     </>
   );
 };
