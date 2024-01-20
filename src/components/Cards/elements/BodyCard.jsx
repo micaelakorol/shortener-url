@@ -1,13 +1,10 @@
-import Image from "../../reusable/Image";
-import cards from "../../styles/sass/cards.module.sass";
-import Boost from "./Boost";
-import HeaderCard from "./HeaderCard";
-import data from "./InfoCard/CardsDescription";
-const Cards = () => {
+import Image from "../../../reusable/Image";
+import cards from "../../../styles/sass/cards.module.sass";
+import data from "../InfoCard/CardsDescription";
+const BodyCard = () => {
   const infoCard = data.items;
   return (
     <>
-      <HeaderCard />
       <div className={cards.containerCards}>
         {infoCard.map((item) => (
           <section className={cards.cards} key={item.id}>
@@ -20,9 +17,8 @@ const Cards = () => {
         ))}
       </div>
       {/** Boost your links today */}
-      <Boost />
     </>
   );
 };
 
-export default Cards;
+export default BodyCard;

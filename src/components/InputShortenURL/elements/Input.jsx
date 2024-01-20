@@ -8,7 +8,6 @@ import ShortenedLinks from "./ShortenedLinks";
 const Input = () => {
   const { captureInput, handleCleanError } = useContext(MyContext);
   const { handleChange, handleSubmit } = HandleActions();
-  console.log(captureInput)
   return (
     <>
       <div className={input.containerInput}>

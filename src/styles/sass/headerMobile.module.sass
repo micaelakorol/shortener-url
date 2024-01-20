@@ -5,10 +5,10 @@
     width: 90%
     flex-direction: column
     @include flex
-    margin-top: 1rem
     background-color: $DarkViolet
     padding: 1rem
     border-radius: 1rem
+    margin:1rem auto
 
 .contentMobile a
     @include flex
@@ -25,5 +25,18 @@ hr
 .contentMobile button
     width: 80%
 
-.imgLogo
-    margin: 0 1rem
+
+/* mobile header*/
+.headerMobile
+ width:100% 
+ @include flex
+ justify-content: space-around
+ padding: .4rem
+
+.imgMobile
+ margin:0.5rem
+ max-width: 100%
+
+@media (min-width:687px)
+ .containerMobile
+  display: none

@@ -1,19 +1,18 @@
 import { useContext } from "react";
 import { MyContext } from "../../context/AppState";
-import Request from "./Request";
+import RequestAPI from "./RequestAPI";
 
 const HandleActions = () => {
   const { setCaptureInput, setInputValue, captureInput } =
     useContext(MyContext);
-  const { request } = Request();
-  /** Capture values input */
+  const { request } = RequestAPI();
+
   const handleChange = (e) => {
     setCaptureInput(e.target.value);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await 
     setInputValue(captureInput);
     request();
   };

@@ -1,6 +1,6 @@
 import React from "react";
-import Social from "./Social";
-import data from "./DataFooter/LinksFooter";
+import Social from "./elements/Social";
+import data from "./dataFooter/LinksFooter";
 import "../../styles/footer.css";
 import Ancla from "../../reusable/Ancla";
 import Image from "../../reusable/Image";

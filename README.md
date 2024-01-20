@@ -1,9 +1,8 @@
-App acortadora de URL.
+Sitio acortador de URL.
 Desafio Frontend Mentor. 🏆
 
-📍 Api utilizada: https://shrtco.de/
+📍 Api utilizada: https://cleanuri.com/docs
 📍 Librerias: Axios
 📍 Desarrollada con: Javascript, React, CSS/SASS
 Deploy: https://shortener-url-fm.netlify.app/
 
-*Refactorizacion en proceso

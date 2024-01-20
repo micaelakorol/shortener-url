@@ -1,25 +1,24 @@
+// eslint-disable-next-line react-hooks/rules-of-hooks
 import { useContext } from "react";
 import axios from "axios";
 import { MyContext } from "../../context/AppState";
 
-const Request = () => {
+const RequestAPI = () => {
   const { captureInput, setShortenLink, setMessages } = useContext(MyContext);
+
   const request = async () => {
     try {
       setMessages("Loading....");
-      const res = await axios(
-        `https://api.shrtco.de/v2/shorten?url=${captureInput}`
-      );
-      setShortenLink(res.data.result.full_short_link);
+      const res = await axios.post("/api/v1/shorten", { url: captureInput });
+      setShortenLink(res.data.result_url);
     } catch (e) {
       setMessages("An error occurred while shortening the link.", e);
+    } finally {
+      setMessages("");
     }
-    setMessages("");
   };
 
-  return {
-    request,
-  };
+  return { request };
 };
 
-export default Request;
+export default RequestAPI;

@@ -7,6 +7,7 @@ import { MyContext } from "../../../context/AppState";
 const ShortenedLinks = () => {
   const { inputValue, shortenLink } = useContext(MyContext);
   const [copied, setCopied] = useState(false);
+  
   useEffect(() => {
     setCopied(false);
   }, [shortenLink]);

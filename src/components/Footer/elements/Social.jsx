@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../../reusable/Image";
-import { facebook, instagram, pinterest, twitter } from "../../assets/variables";
+import Image from "../../../reusable/Image";
+import { facebook, instagram, pinterest, twitter } from "../../../assets/variables";
 
 const Social = () => {
   return (

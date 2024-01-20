@@ -1,5 +1,5 @@
 import React from 'react'
-import cards from "../../styles/sass/cards.module.sass";
+import cards from "../../../styles/sass/cards.module.sass";
 
 const HeaderCard = () => {
   return (
