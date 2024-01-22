@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../../../styles/sass/variables.sass";
 import links from "../../../styles/sass/links.module.sass";
-import { MyContext } from "../../../context/AppState";
+import { MyContext } from "../../../context/ContextCaptureInputs";
 import ButtonCopied from "./ButtonCopied";
 // this component, show shortened links:
 const ShortenedLinks = () => {

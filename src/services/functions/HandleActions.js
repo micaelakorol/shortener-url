@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MyContext } from "../../context/AppState";
+import { MyContext } from "../../context/ContextCaptureInputs";
 import RequestAPI from "./RequestAPI";
 
 const HandleActions = () => {

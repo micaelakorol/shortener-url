@@ -1,4 +1,3 @@
-import React from "react";
 import SocialMediaFooter from "./elements/SocialMediaFooter";
 import data from "./dataFooter/linksFooter";
 import "../../styles/footer.css";

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
-import { MyContext } from "../../../context/AppState";
+import { MyContext } from "../../../context/ContextCaptureInputs";
 
 const ButtonCopied = ({ copied, setCopied }) => {
   const { shortenLink } = useContext(MyContext);
