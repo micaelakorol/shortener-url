@@ -6,8 +6,14 @@ import { MyContext } from "../../../context/ContextCaptureInputs";
 import Button from "../../../reusable/Button";
 import ShortenedLinks from "./ShortenedLinks";
 const Input = () => {
-  const { captureInput, handleCleanError } = useContext(MyContext);
+  const { captureInput, setError, setShortenLink } = useContext(MyContext);
   const { handleChange, handleSubmit } = HandleActions();
+
+  const cleanInput = () => {
+    setError(null);
+    setShortenLink("");
+  };
+
   return (
     <>
       <section className={input.containerInput}>
@@ -19,7 +25,7 @@ const Input = () => {
             autoComplete="off"
             value={captureInput}
             onChange={handleChange}
-            onClick={handleCleanError}
+            onClick={cleanInput}
             required
           />
           <Button type="submit" className={input.btnInput}>

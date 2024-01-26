@@ -9,12 +9,8 @@ export const MyContextProvider = ({ children }) => {
   /** capture the value of the input */
   const [captureInput, setCaptureInput] = useState("");
   /** show error messages */
-  const [messages, setMessages] = useState("");
-  
-  /** clear the error messages */
-  const handleCleanError = () => {
-    setMessages("");
-  };
+  const [error, setError] = useState("");
+
   return (
     <MyContext.Provider
       value={{
@@ -24,9 +20,8 @@ export const MyContextProvider = ({ children }) => {
         setShortenLink,
         captureInput,
         setCaptureInput,
-        handleCleanError,
-        messages,
-        setMessages,
+        error,
+        setError,
       }}
     >
       {children}

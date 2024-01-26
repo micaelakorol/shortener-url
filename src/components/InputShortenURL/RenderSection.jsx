@@ -4,11 +4,11 @@ import links from "../../styles/sass/links.module.sass";
 import { MyContext } from "../../context/ContextCaptureInputs";
 
 const RenderSectionInput = () => {
-  const { messages } = useContext(MyContext);
+  const { error } = useContext(MyContext);
   return (
     <>
       <Input />
-      <h2 className={links.center}>{messages}</h2>
+      <h2 className={links.center}>{error}</h2>
     </>
   );
 };
