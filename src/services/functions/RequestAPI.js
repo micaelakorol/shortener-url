@@ -4,11 +4,12 @@ import { MyContext } from "../../context/ContextCaptureInputs";
 
 const RequestAPI = () => {
   const { captureInput, setShortenLink, setMessages } = useContext(MyContext);
-  const request = async() => {
+  const request = async () => {
     try {
       setMessages("Loading....");
-      const res = await axios.post("/api/v1/shorten", { url: captureInput });
-      setShortenLink(res.data.result_url);
+      const res = await axios.post(`https://is.gd/create.php?format=json&url=${captureInput}`);
+      console.log(res.data.shorturl);
+     setShortenLink(res.data.shorturl);
     } catch (e) {
       setMessages("An error occurred while shortening the link.", e);
     } finally {
