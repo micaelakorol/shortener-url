@@ -14,6 +14,7 @@ const HandleActions = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     request();
+    setCaptureInput('')
   };
 
   return { handleChange, handleSubmit };
