@@ -1,11 +1,11 @@
 import SocialMediaFooter from "./elements/SocialMediaFooter";
-import data from "./dataFooter/linksFooter";
+import {linksFooter} from './dataFooter/linksFooter'
 import "../../styles/footer.css";
 import Ancla from "../../reusable/Ancla";
 import Image from "../../reusable/Image";
 import { logoFooter } from "../../assets/variables";
 const Footer = () => {
-  const info = data.items;
+  const info = linksFooter.items;
   return (
     <footer>
       <Image src={logoFooter} alt="logo" />

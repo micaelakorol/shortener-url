@@ -1,4 +1,4 @@
-const data = {
+export const linksFooter = {
   items: [
     {
       id: 1,
@@ -24,4 +24,3 @@ const data = {
     },
   ],
 };
-export default data;
